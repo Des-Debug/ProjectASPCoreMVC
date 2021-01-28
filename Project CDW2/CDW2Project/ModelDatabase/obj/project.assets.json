@@ -5962,8 +5962,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+      "projectUniqueName": "D:\\GitHub Reponsitory\\ProjectASPCoreMVC\\Project CDW2\\CDW2Project\\ModelDatabase\\ModelDatabase.csproj",
       "projectName": "ModelDatabase",
+      "projectPath": "D:\\GitHub Reponsitory\\ProjectASPCoreMVC\\Project CDW2\\CDW2Project\\ModelDatabase\\ModelDatabase.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHub Reponsitory\\ProjectASPCoreMVC\\Project CDW2\\CDW2Project\\ModelDatabase\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

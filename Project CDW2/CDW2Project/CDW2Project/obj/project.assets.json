@@ -10253,8 +10253,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+      "projectUniqueName": "D:\\GitHub Reponsitory\\ProjectASPCoreMVC\\Project CDW2\\CDW2Project\\CDW2Project\\CDW2Project.csproj",
       "projectName": "CDW2Project",
+      "projectPath": "D:\\GitHub Reponsitory\\ProjectASPCoreMVC\\Project CDW2\\CDW2Project\\CDW2Project\\CDW2Project.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHub Reponsitory\\ProjectASPCoreMVC\\Project CDW2\\CDW2Project\\CDW2Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10271,6 +10274,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "D:\\GitHub Reponsitory\\ProjectASPCoreMVC\\Project CDW2\\CDW2Project\\ModelDatabase\\ModelDatabase.csproj": {
+              "projectPath": "D:\\GitHub Reponsitory\\ProjectASPCoreMVC\\Project CDW2\\CDW2Project\\ModelDatabase\\ModelDatabase.csproj"
             }
           }
         }
