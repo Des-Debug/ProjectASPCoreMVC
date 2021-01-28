@@ -1,0 +1,70 @@
+﻿@model UserInterfaceViewModel
+<header class="header">
+    <!-- Header Left-->
+    <div class="header__left">
+        <!-- Header Left Logo-->
+        <div class="header__left__logo">
+            <a href="/Home/Index">
+                <img src="~/img/logo-medium.png" alt="">
+            </a>
+        </div>
+        <!-- Header Left Good-->
+        <div class="header__left__good">
+            Good morning
+        </div>
+    </div><!-- Header Left-->
+    <!-- Header Right-->
+    <div class="header__right">
+        <!-- Header Right Bell-->
+        <div class="header__right__bell">
+            <a href="#">
+                <i class="fa fa-bell-o" aria-hidden="true"></i>
+            </a>
+        </div>
+        <!-- Header Right Upgrade -->
+        <div class="header__right__up">
+            <a href="#">Upgrade</a>
+        </div>
+        <!-- Header Right Account-->
+        <div class="header__right__account" aria-hidden="false">
+            <!-- <button><img src="./asset/img/avatar.jpg" alt=""></button> -->
+            <div>
+                <div class="header__right__account__avatar">
+                    @if (Model.avatar != null)
+                    {
+                        <img src="@Model.avatar" class="header__right__account__avatar__image">
+                    }
+                    else
+                    {
+                        <img src="~/img/emty_avatar.jpg" class="header__right__account__avatar__image">
+                    }
+                    <div class="header__right__account__avatar__menuDrop">
+                        <ul class="header__right__account__avatar__menuDrop__ul">
+                            @foreach (var item in Model.roles)
+                            {
+                                if (item == "Admin")
+                                {
+                                    <li class="header__right__account__avatar__menuDrop__ul__li">
+                                        <div><a  asp-area="Admin" asp-action="Index" asp-controller="Home" class="story">Admin page</a></div>
+                                    </li>
+                                }
+                            }
+                            <li class="header__right__account__avatar__menuDrop__ul__li">
+                                <div><a asp-action="Index" asp-controller="PersonalPage" asp-route-id="@Model.id" class="story">@Model.fullName</a></div>
+                            </li>
+                            <li class="header__right__account__avatar__menuDrop__ul__li">
+                                <div><a asp-action="Create" asp-controller="WriteArticle" class="story">Write story</a></div>
+                            </li>
+                            <li class="header__right__account__avatar__menuDrop__ul__li">
+                                <div><a asp-action="Index" asp-controller="Stories" class="story">Stories</a></div>
+                            </li>
+                            <li class="header__right__account__avatar__menuDrop__ul__li">
+                                <div><a asp-controller="Logout" asp-action="Index" class="story">Log out</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- Header Right-->
+</header><!-- Header -->

@@ -1,0 +1,175 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model TypeAndArticleList
+<!-- Banner -->
+<div class="banner">
+    <!-- Banner Left-->
+    @if (Model.articles.Any())
+    {
+        <div class="banner__left">
+            <!-- Banner Left Box-->
+            <div class="banner__left__box">
+                <!-- Banner Left Box Img-->
+                <div class="banner__left__box__img">
+                    <a href="#">
+                        <img src="~/Article_Image/@Model.articles[0].AriticleId/@Model.articles[0].Avatar" alt="">
+                    </a>
+                </div>
+                <!-- Banner Left Box Link-->
+                <div class="banner__left__box__link">
+                    <a href="#">
+                        @if (Model.articles[0].ArticleType != null)
+                        {
+                            <div style="display:flex;align-items:center;">
+                                @Html.Raw(Model.articles[0].ArticleType.image)
+                                <h4 style="margin: 0; margin-left: 8px;">@Model.articles[0].ArticleType.Name</h4>
+                            </div>
+                        }
+                    </a>
+                </div>
+                <!-- Banner Left Box Title-->
+                <div class="banner__left__box__title">
+                    <a asp-controller="WatchArticle" asp-action="Index" asp-route-id="@Model.articles[0].AriticleId">
+                        <h2>@Model.articles[0].Title</h2>
+                    </a>
+                </div>
+                <!-- Banner Left Box Content-->
+                <div class="banner__left__box__content">
+                    <p></p>
+                </div>
+                <!-- Banner Left Box Read-->
+                <div class="banner__left__box__read">
+                    <div class="banner__left__box__read__more">
+                        <a href="#">
+                            <h4>Published</h4>
+                        </a>
+                    </div>
+                    <div class="banner__left__box__read__cham">
+                        <span>.</span>
+                    </div>
+                    <div class="banner__left__box__read__minute">
+                        <span>@DateTime.Parse(@Model.articles[0].Date.ToString()).ToString("dddd, dd MMMM yyyy")</span>
+                    </div>
+                </div>
+                <!-- Banner Left Box Like -->
+                <div class="banner__left__box__like">
+                    <span class="thumb thumbs-up"><i class="fas fa-sign-language"></i></span>
+                    <p>@Model.articles[0].Like</p>
+                </div>
+            </div><!-- Banner Left Box-->
+        </div><!-- Banner Left-->
+        <!-- Banner Middle-->
+        <div class="banner__middle">
+            <!-- Banner Middle Box -->
+            <div class="banner__middle__box">
+                <!-- Banner Middle Box Item-->
+                @for (int i = 1; i < Model.articles.Count; i++)
+                {
+                    <div class="banner__middle__box__item">
+                        <!-- Banner Middle Box Item Left-->
+                        <div class="banner__middle__box__item__left">
+                            <!-- Banner Middle Box Item Left Link-->
+                            <div class="banner__middle__box__item__left__link">
+                                @if (Model.articles[i].ArticleType != null)
+                                {
+                                    <div style="display:flex;align-items:center;">
+                                        @Html.Raw(Model.articles[i].ArticleType.image)
+                                        <h4 style="margin: 0; margin-left: 8px;">@Model.articles[i].ArticleType.Name</h4>
+                                    </div>
+                                }
+                            </div>
+                            <!-- Banner Middle Box Item Left Title-->
+                            <div class="banner__middle__box__item__left__title">
+                                <a asp-controller="WatchArticle" asp-action="Index" asp-route-id="@Model.articles[i].AriticleId">
+                                    <h2>@Model.articles[i].Title</h2>
+                                </a>
+                            </div>
+                            <!-- Banner Middle Box Item Left Day-->
+                            <div class="banner__middle__box__item__left__day">
+                                <div class="banner__middle__box__item__left__day__month">
+                                    <h4>Published</h4>
+                                </div>
+                                <div class="banner__middle__box__item__left__day__cham">
+                                    <span>.</span>
+                                </div>
+                                <div class="banner__middle__box__item__left__day__minute">
+                                    <span>@DateTime.Parse(@Model.articles[i].Date.ToString()).ToString("dddd, dd MMMM yyyy")</span>
+                                </div>
+                            </div>
+                            <!-- Banner Middle Box Item Left Like -->
+                            <div class="banner__middle__box__item__left__like">
+                                <span class="thumb thumbs-up"><i class="fas fa-sign-language"></i></span>
+                                <p>@Model.articles[i].Like</p>
+                            </div>
+                        </div><!-- Banner Middle Box Item Left -->
+                        <!-- Banner Middle Box Item Right -->
+                        <div class="banner__middle__box__item__right">
+                            <a href="#">
+                                @if (Model.articles[i].Avatar != null)
+                                {
+                                    <img src="~/Article_Image/@Model.articles[i].AriticleId/@Model.articles[i].Avatar" alt="">
+                                }
+                            </a>
+                        </div><!-- Banner Middle Box Item Right-->
+                    </div><!-- Banner Middle Box Item-->
+                }
+            </div><!-- Banner Middle Box-->
+        </div><!-- Banner Middle-->
+    }
+    <!-- Banner Right-->
+    <div class="banner__right">
+        <!-- Banner Right Box -->
+        <div class="banner__right__box">
+            <p>New Member</p>
+            <div class="banner__right__box__all scrollbar" id="style-1">
+            </div>
+            <span id="btn_Show_User" class="buttonMore">See More</span>
+        </div><!-- Banner Right Box-->
+    </div><!-- Banner Right-->
+</div><!-- Banner -->
+<!-- New -->
+<div class="new">
+    <!-- New Left -->
+    <div class="new__left">
+        <!-- New Left Box -->
+        <div class="new__left__box">
+        </div><!-- New Left Box -->
+    </div><!-- New Left -->
+    <!-- New Right -->
+    <div class="new__right">
+        <div class="formSearch">
+            <span class="searchName">
+                Tìm kiếm <i class="fas fa-search"></i> :
+            </span>
+            <div class="boxSearching">
+                <input type="text" name="searchData" id="searchData" class="boxSearching__form" placeholder="Search" />
+            </div>
+        </div>
+        <div class="new__right__box">
+            @if (Model.articleTypes.Any())
+            {
+                @foreach (var item in Model.articleTypes)
+                {
+                    <div class="new__right__box__item" articleType="@item.ArticleTypeId">
+                        <span>
+                            @Html.Raw(item.image)
+                            <h4>@item.Name</h4>
+                        </span>
+                    </div>
+                }
+            }
+            <div class="new__right__box__item programing_active" articleType="other">
+                <span>
+                    <i class="devicon-slack-plain colored"></i>
+                    <h4>Other</h4>
+                </span>
+            </div>
+        </div>
+    </div><!-- New Right -->
+</div><!-- New -->
+@section Home_View
+{
+    <script src="~/js/Home/Home.js"></script>
+}
