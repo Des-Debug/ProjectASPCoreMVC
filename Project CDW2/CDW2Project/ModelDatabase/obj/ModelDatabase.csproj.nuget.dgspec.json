@@ -1,17 +1,12 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Reponsitory C# docs and Practice\\Docs-C-and-Practice\\C# practice\\Project CDW2\\CDW2Project\\ModelDatabase\\ModelDatabase.csproj": {}
   },
   "projects": {
-    "D:\\Reponsitory C# docs and Practice\\Docs-C-and-Practice\\C# practice\\Project CDW2\\CDW2Project\\ModelDatabase\\ModelDatabase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Reponsitory C# docs and Practice\\Docs-C-and-Practice\\C# practice\\Project CDW2\\CDW2Project\\ModelDatabase\\ModelDatabase.csproj",
         "projectName": "ModelDatabase",
-        "projectPath": "D:\\Reponsitory C# docs and Practice\\Docs-C-and-Practice\\C# practice\\Project CDW2\\CDW2Project\\ModelDatabase\\ModelDatabase.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Reponsitory C# docs and Practice\\Docs-C-and-Practice\\C# practice\\Project CDW2\\CDW2Project\\ModelDatabase\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

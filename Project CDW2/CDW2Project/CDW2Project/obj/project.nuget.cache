@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jFVIRR6xnk7VbZWQYELnI5orDIV86PpiMpemsu+XaPZVcjHToVU5R/fipfD3PCcwSIDiGNMZI18Azg9yrdcOYw==",
+  "dgSpecHash": "dOlhWL8aGVoJt32ot/329JEwVr7OYqyxJnyaR5qsj6+FUmfkMBaLvAFD1ODb+Hhzl42+mWMP4Wrtmr+jP6rs5A==",
   "success": true,
-  "projectFilePath": "D:\\Reponsitory C# docs and Practice\\Docs-C-and-Practice\\C# practice\\Project CDW2\\CDW2Project\\CDW2Project\\CDW2Project.csproj",
+  "projectFilePath": "D:\\GitHub Reponsitory\\ProjectASPCoreMVC\\Project CDW2\\CDW2Project\\CDW2Project\\CDW2Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",

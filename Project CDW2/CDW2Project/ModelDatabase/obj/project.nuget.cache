@@ -1,8 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PPXA56G8YCUkJzrVJGgmDXY7RTr/3HhNZMhLQVgKTb+QcK+yMj1Ba3oCAfIcbzbiKGrQP5PXr/WlEOgEFvMmLw==",
   "success": true,
-  "projectFilePath": "D:\\Reponsitory C# docs and Practice\\Docs-C-and-Practice\\C# practice\\Project CDW2\\CDW2Project\\ModelDatabase\\ModelDatabase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.0\\microsoft.aspnetcore.cryptography.internal.5.0.0.nupkg.sha512",

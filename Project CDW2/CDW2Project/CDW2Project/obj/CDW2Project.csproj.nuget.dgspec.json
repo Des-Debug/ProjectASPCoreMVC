@@ -1,17 +1,12 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Reponsitory C# docs and Practice\\Docs-C-and-Practice\\C# practice\\Project CDW2\\CDW2Project\\CDW2Project\\CDW2Project.csproj": {}
   },
   "projects": {
-    "D:\\Reponsitory C# docs and Practice\\Docs-C-and-Practice\\C# practice\\Project CDW2\\CDW2Project\\CDW2Project\\CDW2Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Reponsitory C# docs and Practice\\Docs-C-and-Practice\\C# practice\\Project CDW2\\CDW2Project\\CDW2Project\\CDW2Project.csproj",
         "projectName": "CDW2Project",
-        "projectPath": "D:\\Reponsitory C# docs and Practice\\Docs-C-and-Practice\\C# practice\\Project CDW2\\CDW2Project\\CDW2Project\\CDW2Project.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Reponsitory C# docs and Practice\\Docs-C-and-Practice\\C# practice\\Project CDW2\\CDW2Project\\CDW2Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +23,6 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Reponsitory C# docs and Practice\\Docs-C-and-Practice\\C# practice\\Project CDW2\\CDW2Project\\ModelDatabase\\ModelDatabase.csproj": {
-                "projectPath": "D:\\Reponsitory C# docs and Practice\\Docs-C-and-Practice\\C# practice\\Project CDW2\\CDW2Project\\ModelDatabase\\ModelDatabase.csproj"
               }
             }
           }
@@ -109,14 +102,14 @@
         }
       }
     },
-    "D:\\Reponsitory C# docs and Practice\\Docs-C-and-Practice\\C# practice\\Project CDW2\\CDW2Project\\ModelDatabase\\ModelDatabase.csproj": {
+    "D:\\GitHub Reponsitory\\ProjectASPCoreMVC\\Project CDW2\\CDW2Project\\ModelDatabase\\ModelDatabase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Reponsitory C# docs and Practice\\Docs-C-and-Practice\\C# practice\\Project CDW2\\CDW2Project\\ModelDatabase\\ModelDatabase.csproj",
+        "projectUniqueName": "D:\\GitHub Reponsitory\\ProjectASPCoreMVC\\Project CDW2\\CDW2Project\\ModelDatabase\\ModelDatabase.csproj",
         "projectName": "ModelDatabase",
-        "projectPath": "D:\\Reponsitory C# docs and Practice\\Docs-C-and-Practice\\C# practice\\Project CDW2\\CDW2Project\\ModelDatabase\\ModelDatabase.csproj",
+        "projectPath": "D:\\GitHub Reponsitory\\ProjectASPCoreMVC\\Project CDW2\\CDW2Project\\ModelDatabase\\ModelDatabase.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Reponsitory C# docs and Practice\\Docs-C-and-Practice\\C# practice\\Project CDW2\\CDW2Project\\ModelDatabase\\obj\\",
+        "outputPath": "D:\\GitHub Reponsitory\\ProjectASPCoreMVC\\Project CDW2\\CDW2Project\\ModelDatabase\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
