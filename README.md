@@ -8,5 +8,11 @@
   - Identity  
 # Database Management Systems
   - SQL Server 2019
-
+# Package
+  - AutoMapper
+  - MailKit
+  - Authentication.Google
+  - EntityFrameworkCore
+  - NewtonsoftJson
+  ...
 
