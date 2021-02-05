@@ -11,6 +11,8 @@
 # Package
   - AutoMapper
   - MailKit
+  - Authentication.
+  - Identity.EntityFrameworkCore
   - Authentication.Google
   - EntityFrameworkCore
   - NewtonsoftJson
